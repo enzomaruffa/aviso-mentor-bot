@@ -14,11 +14,11 @@ def add_suggestion(message, author):
 	x = suggestions.insert_one(suggestion)
 
 
-@bot.command()
-async def ping(ctx, arg):
-	message = arg
-	author = ctx.author
-	await forward_suggestion(message, author)
+# @bot.command()
+# async def ping(ctx, arg):
+# 	message = arg
+# 	author = ctx.author
+# 	await forward_suggestion(message, author)
 
 @bot.event
 async def on_message(message):
